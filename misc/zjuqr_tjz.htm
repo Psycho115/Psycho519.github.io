@@ -2,7 +2,7 @@
 <!-- saved from url=(0103)file:///home/csc105/Downloads/html/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E9%80%9A%E8%A1%8C%E7%A0%81.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>浙江大学通行�?</title>
+    <title>浙江大学通行码</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="zjuqr_files/main.css">
 <script src="zjuqr_files/jquery-1.js"></script><script type="text/javascript" src="zjuqr_files/jquery.js"></script><script>setTimeout("location=location; ", (24*3600*1000)*3); </script><script>
@@ -47,19 +47,19 @@
             colour = "CCCCCC";
         }
         if(dateTime!=''){
-            $("#dateTime").append('<div class="time">同步时间�?'+dateTime+'</div>');
+            $("#dateTime").append('<div class="time">同步时间：'+dateTime+'</div>');
         }
 
-        // 已删�?
+        // 已删除
         if('1'  == '1'){
             colour='CCCCCC';
         }
-        // 核酸检测为�?
-        if('�?'  == '�?'){
+        // 核酸检测为是
+        if('否'  == '是'){
             colour='EB6E18';
         }
 
-        var account='21732030';
+        var account='11312045';
         jQuery('#output').qrcode({
             render	: "table",
             width: 180,
@@ -90,19 +90,19 @@
         //获取系统时间
         function showTime() {
             nowtime = new Date();
-            year = nowtime.getFullYear();//�?
-            month = nowtime.getMonth() + 1;//�?
-            day = nowtime.getDate();//�?
-            hour = nowtime.getHours();//�?
-            minutes = nowtime.getMinutes(); //�?
-            seconds = nowtime.getSeconds(); //�?
+            year = nowtime.getFullYear();//年
+            month = nowtime.getMonth() + 1;//月
+            day = nowtime.getDate();//日
+            hour = nowtime.getHours();//时
+            minutes = nowtime.getMinutes(); //分
+            seconds = nowtime.getSeconds(); //秒
             //文字增加空格
             document.getElementById("div_timer").style = "white-space:pre;";
             //显示时间
-            document.getElementById("div_timer").innerText = p(month) + "�?" + p(day) + "�? " + p(hour) + ":" + p(minutes) + ":" + p(seconds);
+            document.getElementById("div_timer").innerText = p(month) + "月" + p(day) + "日 " + p(hour) + ":" + p(minutes) + ":" + p(seconds);
         }
         setInterval("showTime()", 1000);
-        //月日时分秒小�?10�?0
+        //月日时分秒小于10补0
         function p(s) {
             return s < 10 ? '0' + s : s;
         }
@@ -127,10 +127,10 @@
 
 <div class="content-box">
     <div class="top-title">
-        <h3>唐敬哲的通行�?</h3>
+        <h3>唐敬哲的通行码</h3>
         
 
-            <span class="bgr-blue">研究�?</span>
+            <span class="bgr-blue">研究生</span>
             
 
         
@@ -138,7 +138,7 @@
 
     </div>
     
-        <strong><div class="time2" id="div_timer" style="white-space: pre;">05�?24�? 13:03:34</div></strong>
+        <strong><div class="time2" id="div_timer" style="white-space: pre;">05月24日 13:03:34</div></strong>
     
     <div class="qr">
         
@@ -171,11 +171,11 @@ document.write("有效期：2020-0" + myMonth.toLocaleString() + "-" + myDay.toL
 var myDate = new Date();
 var myMonth = myDate.getMonth() + 1;
 var myDay = myDate.getDate();
-document.write("同步时间�?2020-0" + myMonth.toLocaleString() + "-" + myDay.toLocaleString() + " 09:40:16")
+document.write("同步时间：2020-0" + myMonth.toLocaleString() + "-" + myDay.toLocaleString() + " 09:40:16")
 </script></div></div>
 
     
-        <p class="tip" style="margin-top: 10px;">凭蓝码可在浙江大学校园内通行<br>请主动出示，配合检�?</p>
+        <p class="tip" style="margin-top: 10px;">凭蓝码可在浙江大学校园内通行<br>请主动出示，配合检查</p>
     
     
     <div style="text-align:center; margin-top: 10px">
@@ -189,7 +189,7 @@ document.write("同步时间�?2020-0" + myMonth.toLocaleString() + "-" + myDay.
     </div>
 </div>
 <div class="bottom-tip">
-    <h3>�? �? �? �?0571-88206110</h3>
+    <h3>安 保 处 ：0571-88206110</h3>
     <a href="http://xwfw.zju.edu.cn/mobile/redir.php?catalog_id=371039" target="_blank" class="link-btn">常见问题</a>
     <h3>技术支持：0571-87951669</h3>
 </div>
